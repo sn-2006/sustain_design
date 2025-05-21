@@ -1,0 +1,263 @@
+/* style.css */
+body {
+  background-color: #f0fff0;
+  font-family: "Poppins", sans-serif;
+  color: #2e7d32;
+}
+
+h1 {
+  text-align: center;
+  color: #4caf50;
+}
+
+nav {
+  background-color: #388e3c;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+body {
+  background-image: url("https://img.freepik.com/premium-vector/seamless-aesthetic-leaf-drawing_716438-1.jpg");
+  background-color: rgba(
+    240,
+    255,
+    240,
+    0.95
+  ); /* very light green with slight transparency */
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: auto;
+  font-family: "Poppins", sans-serif;
+  color: #2e7d32;
+  margin: 0;
+  padding: 0;
+}
+section {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(8px);
+  border: 2px solid rgba(34, 139, 34, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(76, 175, 80, 0.2);
+  padding: 2rem;
+  margin: 2rem;
+}
+/* Hero section */
+.hero {
+  position: relative;
+  height: 100vh;
+  background-image: url("https://www.pixelstalk.net/wp-content/uploads/images5/Pastel-Green-Aesthetic-Background.jpg"); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Creates parallax effect */
+  animation: zoom 30s infinite linear alternate; /* Smooth motion */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: black;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay for readability */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 90%;
+  padding: 2rem;
+  background-color: #fffdd0; /* cream color */
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  color: #2e7d32; /* dark green for visibility */
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  color: #444; /* soft dark grey for body text */
+  font-style: italic;
+}
+
+/* Animation for slow zoom/move effect */
+@keyframes zoom {
+  0% {
+    background-size: 100%;
+  }
+  100% {
+    background-size: 110%;
+  }
+}
+
+#products {
+  background-color: rgba(255, 253, 255, 0.7); /* Cream with 70% opacity */
+  padding: 40px;
+  border-radius: 20px;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+#products h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #07391e;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.product-card {
+  background-color: #fff;
+  border: 3px solid #07391e; /* Green border */
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional for slight lift */
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  margin-top: 15px;
+  color: #07391e;
+  font-size: 1.2rem;
+}
+
+.product-card p {
+  font-size: 0.95rem;
+  color: #444;
+  margin-top: 5px;
+}
+#refill-model {
+  background-color: rgba(255, 253, 255, 0.7);
+  padding: 40px 30px;
+  border-radius: 20px;
+  margin: 50px auto;
+  width: 90%;
+  box-shadow: 0 0 15px rgba(0, 100, 0, 0.1);
+}
+
+#refill-model h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #07391e;
+  margin-bottom: 25px;
+}
+
+.refill-steps ol {
+  list-style-position: inside;
+  font-size: 18px;
+  color: #444;
+  line-height: 1.8;
+  padding-left: 10px;
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+
+.refill-steps ol li {
+  margin-bottom: 12px;
+}
+
+.refill-benefits {
+  background-color: white;
+  padding: 20px;
+  border: 2px dashed #07391e;
+  border-radius: 12px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.refill-benefits h3 {
+  text-align: center;
+  font-size: 24px;
+  color: #07391e;
+  margin-bottom: 15px;
+}
+
+.refill-benefits ul {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 18px;
+  color: #444;
+}
+
+.refill-benefits ul li {
+  margin-bottom: 10px;
+}
+.product-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 15px;
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.buy-now-btn,
+.refill-btn {
+  display: inline-block;
+  margin: 10px 5px 0;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.buy-now-btn {
+  background-color: #388e3c;
+  color: #fff;
+}
+
+.buy-now-btn:hover {
+  background-color: #2e7d32;
+  transform: scale(1.05);
+}
+
+.refill-btn {
+  background-color: #6d4c41;
+  color: #fff;
+}
+
+.refill-btn:hover {
+  background-color: #5d4037;
+  transform: scale(1.05);
+}
