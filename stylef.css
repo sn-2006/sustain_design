@@ -261,3 +261,32 @@ section {
   background-color: #5d4037;
   transform: scale(1.05);
 }
+#refill {
+  background-color: #f1fdf4;
+  padding: 40px;
+  border-radius: 12px;
+  margin: 40px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+#refill h2 {
+  color: #3a5a40;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.refill-steps ol {
+  padding-left: 20px;
+  line-height: 1.7;
+  color: #333;
+}
+
+.refill-benefits h3 {
+  margin-top: 30px;
+  color: #2e7d32;
+}
+
+.refill-benefits p {
+  font-style: italic;
+  color: #4e4e4e;
+}
