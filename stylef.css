@@ -261,32 +261,45 @@ section {
   background-color: #5d4037;
   transform: scale(1.05);
 }
-#refill {
-  background-color: #f1fdf4;
-  padding: 40px;
-  border-radius: 12px;
-  margin: 40px 0;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+#refill-model {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
 }
 
-#refill h2 {
-  color: #3a5a40;
+#refill-model h2 {
   font-size: 2em;
+  color: #3e6847;
   margin-bottom: 20px;
+}
+
+.refill-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.refill-content p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #444;
 }
 
 .refill-steps ol {
   padding-left: 20px;
-  line-height: 1.7;
+  line-height: 1.6;
+  margin-bottom: 20px;
   color: #333;
 }
 
 .refill-benefits h3 {
-  margin-top: 30px;
+  margin-top: 20px;
+  font-size: 1.3rem;
   color: #2e7d32;
 }
 
-.refill-benefits p {
-  font-style: italic;
-  color: #4e4e4e;
+.refill-benefits ul {
+  padding-left: 20px;
+  line-height: 1.6;
+  color: #333;
 }
